@@ -1,9 +1,6 @@
-
 import { Button } from "@/components/ui/button";
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 bg-portfolio-lightGray">
+  return <section id="about" className="py-20 bg-portfolio-lightGray">
       <div className="container">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-portfolio-navy mb-4">About Me</h2>
@@ -12,11 +9,7 @@ const About = () => {
         
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <img 
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-              alt="Working on a laptop"
-              className="rounded-lg shadow-lg w-full max-w-lg mx-auto"
-            />
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Working on a laptop" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
           </div>
           
           <div className="lg:w-1/2 space-y-6">
@@ -32,16 +25,16 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div>
-                <h4 className="text-lg font-medium text-portfolio-navy">Name:</h4>
-                <p className="text-gray-600">Your Name</p>
+                <h4 className="text-lg font-medium text-portfolio-navy text-left">Name:</h4>
+                <p className="text-gray-600">Syed Mubashir Ali</p>
               </div>
               <div>
                 <h4 className="text-lg font-medium text-portfolio-navy">Email:</h4>
-                <p className="text-gray-600">youremail@example.com</p>
+                <p className="text-gray-600">smubashirali620@gmail.com</p>
               </div>
               <div>
                 <h4 className="text-lg font-medium text-portfolio-navy">Location:</h4>
-                <p className="text-gray-600">Your City, Country</p>
+                <p className="text-gray-600">Islamabad, Pakistan</p>
               </div>
               <div>
                 <h4 className="text-lg font-medium text-portfolio-navy">Available for:</h4>
@@ -49,17 +42,12 @@ const About = () => {
               </div>
             </div>
             
-            <Button 
-              asChild
-              className="bg-portfolio-teal hover:bg-portfolio-teal/90 mt-6"
-            >
+            <Button asChild className="bg-portfolio-teal hover:bg-portfolio-teal/90 mt-6">
               <a href="#resume">View My Resume</a>
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
