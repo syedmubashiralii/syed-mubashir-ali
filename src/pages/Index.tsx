@@ -1,12 +1,65 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import ResumeViewer from "@/components/ResumeViewer";
+import { ArrowUp } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <ResumeViewer />
+        <Contact />
+      </main>
+      
+      <footer className="bg-portfolio-navy text-white py-8">
+        <div className="container text-center">
+          <p>© {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
+          <p className="text-gray-400 mt-2">
+            Built with React, TypeScript, and Tailwind CSS
+          </p>
+        </div>
+      </footer>
+      
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-portfolio-teal text-white p-3 rounded-full shadow-lg hover:bg-portfolio-teal/90 transition-colors z-40"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp size={20} />
+        </button>
+      )}
     </div>
   );
 };
