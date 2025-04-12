@@ -127,7 +127,7 @@ const Projects = () => {
             variant="outline" 
             className="border-portfolio-teal text-portfolio-teal hover:bg-portfolio-teal hover:text-white"
           >
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/syedmubashiralii" target="_blank" rel="noopener noreferrer">
               View More on GitHub <Github className="ml-2 h-4 w-4" />
             </a>
           </Button>
