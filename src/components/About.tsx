@@ -20,17 +20,14 @@ const About = () => {
           </div>
           
           <div className="lg:w-1/2 space-y-6">
-            <h3 className="text-2xl font-semibold text-portfolio-navy">Who I Am</h3>
             <p className="text-gray-600">
-              I am a passionate software developer with a strong foundation in modern web technologies. 
-              My journey in the tech world began with a curiosity about how websites work, 
-              which quickly evolved into a deep passion for building innovative digital solutions.
+            I'm a passionate Flutter developer with a strong foundation in building high-performance mobile and web applications. My journey into development began with a fascination for how apps work — today, that curiosity fuels a career dedicated to solving real-world problems through clean, scalable code.
             </p>
             <p className="text-gray-600">
-              With experience in both frontend and backend development, I enjoy creating 
-              responsive, user-friendly applications that solve real-world problems. 
-              I'm constantly learning and adapting to new technologies to stay at the 
-              forefront of the industry.
+            With experience developing and deploying over 20 apps across Google Play and the App Store, I've built fintech solutions, AI-powered image tools, streaming platforms, and end-to-end e-commerce apps. From seamless UI/UX to backend integration, I take pride in delivering polished, reliable experiences using Flutter, Firebase, GetX, Dio, and a wide range of tools.
+            </p>
+            <p className="text-gray-600">
+            Whether it's integrating payment systems, building custom animations, or enhancing user engagement with notifications and machine learning, I'm always exploring new technologies to stay ahead. My approach is practical, user-centric, and driven by a continuous desire to learn and push the limits of what Flutter can do.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
