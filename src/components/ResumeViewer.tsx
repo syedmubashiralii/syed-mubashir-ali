@@ -58,7 +58,7 @@ const ResumeViewer = () => {
                 onClick={handleDownload}
                 variant="outline" 
                 size="sm"
-                className="text-white border-white hover:bg-white/20"
+                className="text-white hover:bg-white/20"
               >
                 <Download className="mr-2 h-4 w-4" />
                 Download
