@@ -44,10 +44,8 @@ const Index = () => {
       
       <footer className="bg-portfolio-navy text-white py-8">
         <div className="container text-center">
-          <p>© {new Date().getFullYear()} Your Name. All Rights Reserved.</p>
-          <p className="text-gray-400 mt-2">
-            Built with React, TypeScript, and Tailwind CSS
-          </p>
+          <p>© {new Date().getFullYear()} Syed Mubashir Ali. All Rights Reserved.</p>
+        
         </div>
       </footer>
       
