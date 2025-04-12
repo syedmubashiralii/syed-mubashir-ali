@@ -7,7 +7,7 @@ const Experience = () => {
       title: "Flutter Developer",
       company: "HeapStash Global",
       location: "Lahore (Remote)",
-      period: "Nov 2023 - Present",
+      period: "Nov 2023 - Mar 2025",
       description: [
         "Developed a Fintech application with features like bank account linking and cryptocurrency wallet management, ensuring secure transactions and seamless financial operations.",
         "Built a Flutter web application for flight bookings and cryptocurrency payments, optimizing performance and user experience for smooth transactions and hassle-free booking."
@@ -26,15 +26,6 @@ const Experience = () => {
         "Focused on performance enhancement, seamless UI/UX, and AI integration to enhance user experience across multiple applications."
       ]
     },
-    {
-      title: "Flutter Developer",
-      company: "BIIT",
-      location: "Rawalpindi",
-      period: "Jul 2021 - Jun 2022",
-      description: [
-        "Developed Memory Jogger, a Flutter app designed to assist Alzheimer's patients in jogging their memory through engaging activities and reminders."
-      ]
-    }
   ];
 
   const education = [
