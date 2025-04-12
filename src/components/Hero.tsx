@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-portfolio-teal shadow-xl">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Profile" className="w-full h-full object-cover" />
+              <img alt="Profile" className="w-full h-full object-cover" src="/lovable-uploads/487de536-0b61-45c5-8411-260cbe848850.png" />
             </div>
           </div>
         </div>
