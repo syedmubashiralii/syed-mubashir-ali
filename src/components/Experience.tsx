@@ -1,60 +1,49 @@
 
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin, GraduationCap, Code, Smartphone, CreditCard, Database } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Developer",
-      company: "Tech Solutions Inc.",
-      location: "San Francisco, CA",
-      period: "Jan 2021 - Present",
+      title: "Flutter Developer",
+      company: "HeapStash Global",
+      location: "Lahore (Remote)",
+      period: "Nov 2023 - Present",
       description: [
-        "Led the development of a scalable e-commerce platform using React, Node.js, and MongoDB",
-        "Implemented CI/CD pipelines that reduced deployment time by 40%",
-        "Mentored junior developers and conducted code reviews to ensure code quality",
-        "Optimized database queries resulting in a 30% performance improvement"
+        "Developed a Fintech application with features like bank account linking and cryptocurrency wallet management, ensuring secure transactions and seamless financial operations.",
+        "Built a Flutter web application for flight bookings and cryptocurrency payments, optimizing performance and user experience for smooth transactions and hassle-free booking."
       ]
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Co.",
-      location: "New York, NY",
-      period: "May 2018 - Dec 2020",
+      title: "Flutter Mobile App Developer",
+      company: "Khas Tech",
+      location: "Islamabad",
+      period: "Jun 2022 - Nov 2023",
       description: [
-        "Developed and maintained multiple client websites using React, Express, and PostgreSQL",
-        "Created RESTful APIs for mobile applications with over 50,000 active users",
-        "Collaborated with design team to implement responsive UI components",
-        "Participated in agile development process and sprint planning"
+        "Developed and deployed various AI-powered editing applications and utility apps using Flutter for both the Play Store and App Store.",
+        "Created Enhancer, Remover, Sketcher – AI-based image processing apps for enhancing images, removing objects, and converting photos into sketches.",
+        "Designed ICR (Intelligent Character Recognition) Apps for text extraction and document scanning.",
+        "Built tracking applications and step counter (pedometer) apps for fitness and location-based services.",
+        "Focused on performance enhancement, seamless UI/UX, and AI integration to enhance user experience across multiple applications."
       ]
     },
     {
-      title: "Frontend Developer",
-      company: "WebCreative Agency",
-      location: "Chicago, IL",
-      period: "Aug 2016 - Apr 2018",
+      title: "Flutter Developer",
+      company: "BIIT",
+      location: "Rawalpindi",
+      period: "Jul 2021 - Jun 2022",
       description: [
-        "Built interactive and responsive websites for various clients using HTML, CSS, and JavaScript",
-        "Worked with WordPress and custom PHP solutions to deliver content management systems",
-        "Implemented cross-browser compatibility fixes and performance optimizations",
-        "Assisted in UX/UI design and prototyping for web applications"
+        "Developed Memory Jogger, a Flutter app designed to assist Alzheimer's patients in jogging their memory through engaging activities and reminders."
       ]
     }
   ];
 
   const education = [
     {
-      degree: "Master of Computer Science",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      period: "2014 - 2016",
-      description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on 'Neural Networks for Natural Language Processing'."
-    },
-    {
-      degree: "Bachelor of Science in Computer Engineering",
-      institution: "Massachusetts Institute of Technology",
-      location: "Cambridge, MA",
-      period: "2010 - 2014",
-      description: "Graduated with honors. Participated in various hackathons and software development competitions."
+      degree: "BS in Computer Science",
+      institution: "BIIT (Bahria Institute of Information Technology)",
+      location: "Rawalpindi, Pakistan",
+      period: "Oct 2018 - Jun 2022",
+      description: "Graduated with a Bachelor of Science degree in Computer Science, gaining solid foundations in programming, algorithms, data structures, and software development."
     }
   ];
 
@@ -80,7 +69,13 @@ const Experience = () => {
               {experiences.map((exp, index) => (
                 <div key={index} className="relative pl-12">
                   <div className="absolute left-0 top-1 w-10 h-10 bg-portfolio-teal rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">{index + 1}</span>
+                    {index === 0 ? (
+                      <CreditCard className="w-5 h-5 text-white" />
+                    ) : index === 1 ? (
+                      <Smartphone className="w-5 h-5 text-white" />
+                    ) : (
+                      <Code className="w-5 h-5 text-white" />
+                    )}
                   </div>
                   
                   <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
@@ -111,7 +106,7 @@ const Experience = () => {
           
           <div>
             <h3 className="text-2xl font-bold mb-8 flex items-center">
-              <Calendar className="mr-3 text-portfolio-teal" /> 
+              <GraduationCap className="mr-3 text-portfolio-teal" /> 
               Education
             </h3>
             
@@ -119,7 +114,7 @@ const Experience = () => {
               {education.map((edu, index) => (
                 <div key={index} className="relative pl-12">
                   <div className="absolute left-0 top-1 w-10 h-10 bg-portfolio-teal rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">{index + 1}</span>
+                    <GraduationCap className="w-5 h-5 text-white" />
                   </div>
                   
                   <div className="bg-white/5 backdrop-blur-sm p-6 rounded-lg">
