@@ -1,56 +1,26 @@
 
 import { 
-  Server, 
   Database, 
-  Layout, 
   Code,
-  GitBranch,
   Smartphone,
-  Cpu,
-  BarChart
 } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
-      icon: <Layout className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "Tailwind CSS", "Bootstrap"]
-    },
-    {
-      title: "Backend Development",
-      icon: <Server className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["Node.js", "Express", "Python", "Django", "PHP", "RESTful APIs"]
+      title: "Programming Languages",
+      icon: <Code className="w-10 h-10 text-portfolio-teal" />,
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "PHP", "Dart"]
     },
     {
       title: "Database",
       icon: <Database className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis"]
-    },
-    {
-      title: "Programming Languages",
-      icon: <Code className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "PHP"]
-    },
-    {
-      title: "DevOps & Tools",
-      icon: <GitBranch className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Jenkins", "Linux"]
+      skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis", "SQLite"]
     },
     {
       title: "Mobile Development",
       icon: <Smartphone className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["React Native", "Flutter", "Ionic", "Android", "iOS"]
-    },
-    {
-      title: "Data Science",
-      icon: <BarChart className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["Python", "Pandas", "NumPy", "Data Visualization", "Statistics"]
-    },
-    {
-      title: "Machine Learning",
-      icon: <Cpu className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Computer Vision"]
+      skills: ["React Native", "Flutter", "Ionic", "Android", "iOS", "Kotlin", "Swift"]
     }
   ];
 
@@ -66,7 +36,7 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
