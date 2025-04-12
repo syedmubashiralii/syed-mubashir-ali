@@ -24,10 +24,10 @@ const Hero = () => {
               </Button>
             </div>
             <div className="flex items-center space-x-4 pt-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-portfolio-lightBlue transition-colors">
+              <a href="https://github.com/syedmubashiralii" target="_blank" rel="noopener noreferrer" className="text-white hover:text-portfolio-lightBlue transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-white hover:text-portfolio-lightBlue transition-colors">
+              <a href="www.linkedin.com/in/syed-mubashir-ali-796122177" target="_blank" rel="noopener noreferrer" className="text-white hover:text-portfolio-lightBlue transition-colors">
                 <Linkedin size={24} />
               </a>
             </div>
