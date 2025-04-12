@@ -3,6 +3,9 @@ import {
   Database, 
   Code,
   Smartphone,
+  Monitor,
+  Globe,
+  Tablet,
 } from "lucide-react";
 
 const Skills = () => {
@@ -10,17 +13,22 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: <Code className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "PHP", "Dart"]
+      skills: ["Dart", "JavaScript", "Java", "C++", "PHP", "C#"]
     },
     {
       title: "Database",
       icon: <Database className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Redis", "SQLite"]
+      skills: ["MySQL", "Firebase", "SQLite", "Supabase", "MongoDB"]
     },
     {
       title: "Mobile Development",
       icon: <Smartphone className="w-10 h-10 text-portfolio-teal" />,
-      skills: ["React Native", "Flutter", "Ionic", "Android", "iOS", "Kotlin", "Swift"]
+      skills: ["Flutter", "React Native", "Android", "iOS"]
+    },
+    {
+      title: "Application Types",
+      icon: <Globe className="w-10 h-10 text-portfolio-teal" />,
+      skills: ["Mobile Apps", "Desktop Apps", "Web Apps"]
     }
   ];
 
@@ -36,7 +44,7 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
