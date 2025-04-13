@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+
 const About = () => {
   return <section id="about" className="py-20 bg-portfolio-lightGray">
       <div className="container">
@@ -10,7 +11,7 @@ const About = () => {
         
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-1/2">
-            <img src="/lovable-uploads/e1f47e99-afdd-4bef-bd99-22591418bfef.png" alt="Syed Mubashir Ali - Flutter Developer" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
+            <img src="/lovable-uploads/440ce318-9477-4af3-89cb-ec839fef8c31.png" alt="Syed Mubashir Ali - Flutter Developer" className="rounded-lg shadow-lg w-full max-w-lg mx-auto" />
           </div>
           
           <div className="lg:w-1/2 space-y-6">
