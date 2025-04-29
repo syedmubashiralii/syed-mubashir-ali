@@ -10,7 +10,7 @@ const Projects = () => {
       image: "images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=com.charisma.trackassistant.GPStrackingprofiling.guide&hl=en",
-      githubLink: "#"
+      githubLink: "https://github.com/syedmubashiralii/BuddyTracker"
     },
     {
       title: "Task Management App",
