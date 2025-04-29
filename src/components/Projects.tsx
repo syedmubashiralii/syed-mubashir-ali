@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "Buddy Tracker",
       description: "A full-featured e-commerce platform with product management, shopping cart, and payment integration.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      tags: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
+      image: "https://drive.google.com/file/d/11sp4JcDL438vYlIzkGxvXIQ6vTM6gChU/view?usp=sharing",
+      tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "#",
       githubLink: "#"
     },
