@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Buddy Tracker",
       description: "A full-featured e-commerce platform with product management, shopping cart, and payment integration.",
-      image: "https://drive.google.com/file/d/11sp4JcDL438vYlIzkGxvXIQ6vTM6gChU/view?usp=sharing",
+      image: "images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "#",
       githubLink: "#"
