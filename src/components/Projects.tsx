@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Buddy Tracker",
-      description: "Live Location & Buddy Tracker is a powerful app for real-time location sharing, group tracking, chat, route finding, and travel history — perfect for staying connected and safe with friends and family.",
+      description: "Live Location & Buddy Tracker is a powerful app for real-time location sharing, group tracking, chat, route finding, and travel history.",
       image: "images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=com.charisma.trackassistant.GPStrackingprofiling.guide&hl=en",
