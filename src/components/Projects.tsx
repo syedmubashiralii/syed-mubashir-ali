@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Pacer",
       description: "Pacer is your personal step counter and walking tracker. Using a built-in pedometer, it records every step, distance walked, and your walking path.",
-      image: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      image: "images/pacer-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=charisma.motiondetectorpedometer.steptrackercounter&hl=en",
       githubLink: "https://github.com/syedmubashiralii/Pacer-Android"
