@@ -24,9 +24,9 @@ const Projects = () => {
       title: "BrightFlixx",
       description: "BrightFlixx is your personalized entertainment hub – stream your favorite movies and shows, just like Netflix.",
       image: "images/brightflixx-1.jpg",
-      tags: ["Flutter", "Dart", "Google Map", "Firebase"],
-      liveLink: "#",
-      githubLink: "#"
+      tags: ["Flutter", "Dart"],
+      liveLink: "https://play.google.com/store/apps/details?id=com.stream.brightflixx&hl=en",
+      
     },
     {
       title: "Health & Fitness Tracker",
