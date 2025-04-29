@@ -100,7 +100,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a 
-                    href="#" 
+                    href="https://github.com/syedmubashiralii" 
                     className="bg-portfolio-teal/20 p-3 rounded-full hover:bg-portfolio-teal transition-colors"
                     aria-label="GitHub"
                   >
