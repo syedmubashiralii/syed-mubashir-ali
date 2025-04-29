@@ -91,7 +91,7 @@ const Contact = () => {
                 <h4 className="text-lg font-medium mb-4">Follow Me</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/syed-mubashir-ali-796122177/" 
                     className="bg-portfolio-teal/20 p-3 rounded-full hover:bg-portfolio-teal transition-colors"
                     aria-label="LinkedIn"
                   >
