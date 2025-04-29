@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Buddy Tracker",
       description: "Live Location & Buddy Tracker is a powerful app for real-time location sharing, group tracking, chat, route finding, and travel history.",
-      image: "images/buddy-tracker-1.jpg",
+      image: "https://github.com/syedmubashiralii/syed-mubashir-ali/blob/c69bef9eda8c01a0e1bf38275ea5097b30a23c71/images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=com.charisma.trackassistant.GPStrackingprofiling.guide&hl=en",
       githubLink: "https://github.com/syedmubashiralii/BuddyTracker"
@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Pacer",
       description: "Pacer is your personal step counter and walking tracker. Using a built-in pedometer, it records every step, distance walked, and your walking path.",
-      image: "images/pacer-1.jpg",
+      image: "https://github.com/syedmubashiralii/syed-mubashir-ali/blob/c69bef9eda8c01a0e1bf38275ea5097b30a23c71/images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=charisma.motiondetectorpedometer.steptrackercounter&hl=en",
       githubLink: "https://github.com/syedmubashiralii/Pacer-Android"
