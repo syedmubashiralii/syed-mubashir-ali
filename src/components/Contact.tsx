@@ -21,19 +21,25 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add your form submission logic here
-    
-    // Reset form
+  
+    // Construct WhatsApp message
+    const message = `Name: ${formData.name}%0AEmail: ${formData.email}%0ASubject: ${formData.subject}%0AMessage: ${formData.message}`;
+  
+    // Your WhatsApp number in international format without "+" or dashes
+    const whatsappNumber = "923105205275"; // replace with your actual number
+  
+    // Redirect to WhatsApp
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
+  
+    // Optionally reset the form
     setFormData({
       name: "",
       email: "",
       subject: "",
       message: ""
     });
-    
-    // Show success message
-    alert("Thank you for your message. I'll get back to you soon!");
   };
+  
 
   return (
     <section id="contact" className="py-20 bg-white">
