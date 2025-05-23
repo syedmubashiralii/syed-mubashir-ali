@@ -56,7 +56,7 @@ const ResumeViewer = () => {
               </Button>
               <Button 
                 onClick={handleDownload}
-                variant="outline" 
+                variant="ghost" 
                 size="sm"
                 className="text-white hover:bg-white/20"
               >
