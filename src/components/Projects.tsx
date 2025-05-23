@@ -29,11 +29,11 @@ const Projects = () => {
       
     },
     {
-      title: "Health & Fitness Tracker",
-      description: "A mobile application for tracking workouts, nutrition, and personal health metrics.",
-      image: "https://images.unsplash.com/photo-1594882645126-14020914d58d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1485&q=80",
-      tags: ["React Native", "GraphQL", "Apollo", "Node.js", "MongoDB"],
-      liveLink: "#",
+      title: "Neo Pass",
+      description: "Neopass is a modern travel booking platform built entirely using Flutter for Web, designed to offer seamless travel experiences powered by cryptocurrency payments. Whether you're booking tours, accommodations, or experiences, Neopass brings together ease of use, secure blockchain-based transactions, and a sleek, responsive UI.",
+      image: "images/neopass-1.png",
+      tags: ["Flutter", "Dart", "Stripe", "Crypto-Payments", "Flutter Web"],
+      liveLink: "https://neopass.club/key",
       githubLink: "#"
     },
     {
