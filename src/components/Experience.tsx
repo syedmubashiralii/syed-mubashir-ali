@@ -31,7 +31,7 @@ const Experience = () => {
   const education = [
     {
       degree: "BS in Computer Science",
-      institution: "BIIT (Bahria Institute of Information Technology)",
+      institution: "BIIT (Barani Institute of Information Technology)",
       location: "Rawalpindi, Pakistan",
       period: "Oct 2018 - Jun 2022",
       description: "Graduated with a Bachelor of Science degree in Computer Science, gaining solid foundations in programming, algorithms, data structures, and software development."
