@@ -30,7 +30,7 @@ const Projects = () => {
     },
     {
       title: "Neo Pass",
-      description: "Neopass is a modern travel booking platform built entirely using Flutter for Web, designed to offer seamless travel experiences powered by cryptocurrency payments. Whether you're booking tours, accommodations, or experiences, Neopass brings together ease of use, secure blockchain-based transactions, and a sleek, responsive UI.",
+      description: "Neopass is a modern travel booking platform built entirely using Flutter for Web, designed to offer seamless travel experiences powered by cryptocurrency payments.",
       image: "images/neopass-1.png",
       tags: ["Flutter", "Dart", "Stripe", "Crypto-Payments", "Flutter Web"],
       liveLink: "https://neopass.club/key",
