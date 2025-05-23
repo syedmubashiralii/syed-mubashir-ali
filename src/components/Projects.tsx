@@ -62,7 +62,7 @@ const Projects = () => {
           <div className="w-20 h-1 bg-portfolio-teal mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Check out some of my recent work. These projects showcase my skills and experience in 
-            building modern web applications.
+            building modern web and mobile applications.
           </p>
         </div>
         
@@ -70,19 +70,20 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+              className="elegant-card overflow-hidden group"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-52 overflow-hidden relative">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-portfolio-navy/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-portfolio-navy mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold text-portfolio-navy mb-2 elegant-heading">{project.title}</h3>
+                <p className="text-gray-600 mb-4 mt-3">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
@@ -96,20 +97,22 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-3">
+                  {project.githubLink && (
+                    <Button 
+                      asChild
+                      variant="outline" 
+                      size="sm"
+                      className="flex-1 flex items-center justify-center border-portfolio-slate hover:bg-portfolio-slate hover:text-white transition-colors"
+                    >
+                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-2 h-4 w-4" /> Code
+                      </a>
+                    </Button>
+                  )}
                   <Button 
                     asChild
-                    variant="outline" 
                     size="sm"
-                    className="flex-1 flex items-center justify-center"
-                  >
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" /> Code
-                    </a>
-                  </Button>
-                  <Button 
-                    asChild
-                    size="sm"
-                    className="flex-1 bg-portfolio-teal hover:bg-portfolio-teal/90 flex items-center justify-center"
+                    className="flex-1 bg-portfolio-teal hover:bg-portfolio-teal/90 flex items-center justify-center shadow-sm"
                   >
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" /> Demo
@@ -125,10 +128,10 @@ const Projects = () => {
           <Button 
             asChild
             variant="outline" 
-            className="border-portfolio-teal text-portfolio-teal hover:bg-portfolio-teal hover:text-white"
+            className="border-portfolio-teal text-portfolio-navy hover:bg-portfolio-teal hover:text-white group"
           >
-            <a href="https://github.com/syedmubashiralii" target="_blank" rel="noopener noreferrer">
-              View More on GitHub <Github className="ml-2 h-4 w-4" />
+            <a href="https://github.com/syedmubashiralii" target="_blank" rel="noopener noreferrer" className="flex items-center">
+              View More on GitHub <Github className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform" />
             </a>
           </Button>
         </div>

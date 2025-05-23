@@ -29,15 +29,15 @@ const Header = () => {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled 
-          ? "bg-white/90 backdrop-blur-sm shadow-sm py-2" 
-          : "bg-transparent py-4"
+          ? "bg-white/90 backdrop-blur-md shadow-sm py-3" 
+          : "bg-transparent py-5"
       )}
     >
       <div className="container flex items-center justify-between">
         <a href="#home" className="text-2xl font-bold text-portfolio-navy">
-          Syed Mubashir Ali
+          Syed <span className="text-portfolio-teal">Mubashir</span> Ali
         </a>
         
         {/* Desktop Navigation */}
@@ -46,14 +46,15 @@ const Header = () => {
             <a 
               key={link.name}
               href={link.href}
-              className="text-gray-700 hover:text-portfolio-teal transition-colors font-medium"
+              className="text-portfolio-slate hover:text-portfolio-teal transition-colors font-medium relative group"
             >
               {link.name}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-portfolio-teal group-hover:w-full transition-all duration-300"></span>
             </a>
           ))}
           <Button 
             asChild
-            className="bg-portfolio-teal hover:bg-portfolio-teal/90"
+            className="bg-portfolio-teal hover:bg-portfolio-teal/90 shadow-md hover:shadow-lg transition-all px-6"
           >
             <a href="#resume">Resume</a>
           </Button>
@@ -70,13 +71,13 @@ const Header = () => {
       
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg py-4 animate-fade-in">
           <nav className="container flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-portfolio-teal transition-colors py-2 font-medium"
+                className="text-portfolio-slate hover:text-portfolio-teal transition-colors py-2 font-medium border-b border-gray-100 last:border-0"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
@@ -84,7 +85,7 @@ const Header = () => {
             ))}
             <Button 
               asChild
-              className="bg-portfolio-teal hover:bg-portfolio-teal/90 w-full mt-2"
+              className="bg-portfolio-teal hover:bg-portfolio-teal/90 w-full mt-2 shadow-md"
             >
               <a href="#resume" onClick={() => setIsMobileMenuOpen(false)}>Resume</a>
             </Button>
