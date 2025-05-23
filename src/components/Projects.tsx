@@ -37,11 +37,11 @@ const Projects = () => {
       githubLink: "#"
     },
     {
-      title: "AI Content Generator",
-      description: "A web application that leverages AI to generate various types of content for marketing and social media.",
-      image: "https://images.unsplash.com/photo-1677442135726-98fa2fb79ad3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80",
-      tags: ["Python", "Flask", "OpenAI API", "React", "Docker"],
-      liveLink: "#",
+      title: "Neo One",
+      description: "Neo One is a modern Flutter fintech app offering virtual cards, IBANs, and a secure multi-currency crypto wallet.\nLink your bank accounts seamlessly using Plaid-powered Open Banking.\nBuilt entirely with Flutter, Neo One delivers a fast, secure, and unified financial experience across platforms.",
+      image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/neo-one-1.jpg",
+      tags: ["Flutter", "Fintech", "Dart", "Plaid", "Striga", "Weavr"],
+      liveLink: "https://apps.apple.com/sk/app/neo-one/id6475296925",
       githubLink: "#"
     },
     {
