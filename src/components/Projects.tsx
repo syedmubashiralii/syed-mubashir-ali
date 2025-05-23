@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Buddy Tracker",
       description: "Live Location & Buddy Tracker is a powerful app for real-time location sharing, group tracking, chat, route finding, and travel history.",
-      image: "images/buddy-tracker-1.jpg",
+      image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/buddy-tracker-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=com.charisma.trackassistant.GPStrackingprofiling.guide&hl=en",
       githubLink: "https://github.com/syedmubashiralii/BuddyTracker"
@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: "Pacer",
       description: "Pacer is your personal step counter and walking tracker. Using a built-in pedometer, it records every step, distance walked, and your walking path.",
-      image: "images/pacer-1.jpg",
+      image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/pacer-1.jpg",
       tags: ["Flutter", "Dart", "Google Map", "Firebase"],
       liveLink: "https://play.google.com/store/apps/details?id=charisma.motiondetectorpedometer.steptrackercounter&hl=en",
       githubLink: "https://github.com/syedmubashiralii/Pacer-Android"
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       title: "BrightFlixx",
       description: "BrightFlixx is your personalized entertainment hub – stream your favorite movies and shows, just like Netflix.",
-      image: "images/brightflixx-1.jpg",
+      image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/brightflixx-1.jpg",
       tags: ["Flutter", "Dart"],
       liveLink: "https://play.google.com/store/apps/details?id=com.stream.brightflixx&hl=en",
       
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       title: "Neo Pass",
       description: "Neopass is a modern travel booking platform built entirely using Flutter for Web, designed to offer seamless travel experiences powered by cryptocurrency payments.",
-      image: "images/neopass-1.png",
+      image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/neopass-1.png",
       tags: ["Flutter", "Dart", "Stripe", "Crypto-Payments", "Flutter Web"],
       liveLink: "https://neopass.club/key",
       githubLink: "#"
