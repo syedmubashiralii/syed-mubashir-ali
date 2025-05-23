@@ -38,7 +38,7 @@ const Projects = () => {
     },
     {
       title: "Neo One",
-      description: "Neo One is a modern Flutter fintech app offering virtual cards, IBANs, and a secure multi-currency crypto wallet.\nLink your bank accounts seamlessly using Plaid-powered Open Banking.\nBuilt entirely with Flutter, Neo One delivers a fast, secure, and unified financial experience across platforms.",
+      description: "Neo One is a modern Flutter fintech app offering virtual cards, IBANs, and a secure multi-currency crypto wallet.\nLink your bank accounts seamlessly using Plaid-powered Open Banking.",
       image: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/neo-one-1.jpg",
       tags: ["Flutter", "Fintech", "Dart", "Plaid", "Striga", "Weavr"],
       liveLink: "https://apps.apple.com/sk/app/neo-one/id6475296925",
