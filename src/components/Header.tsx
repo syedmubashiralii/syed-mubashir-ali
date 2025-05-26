@@ -36,7 +36,10 @@ const Header = () => {
       )}
     >
       <div className="container flex items-center justify-between">
-        <a href="#home" className="text-2xl font-bold text-portfolio-navy">
+        <a href="#home" className={cn(
+          "text-2xl font-bold transition-colors",
+          isScrolled ? "text-portfolio-navy" : "text-white"
+        )}>
           Syed <span className="text-portfolio-teal">Mubashir</span> Ali
         </a>
         
@@ -46,7 +49,10 @@ const Header = () => {
             <a 
               key={link.name}
               href={link.href}
-              className="text-portfolio-navy hover:text-portfolio-teal transition-colors font-medium relative group"
+              className={cn(
+                "hover:text-portfolio-teal transition-colors font-medium relative group",
+                isScrolled ? "text-portfolio-navy" : "text-white"
+              )}
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-portfolio-teal group-hover:w-full transition-all duration-300"></span>
@@ -62,7 +68,10 @@ const Header = () => {
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-portfolio-navy p-2"
+          className={cn(
+            "md:hidden p-2 transition-colors",
+            isScrolled ? "text-portfolio-navy" : "text-white"
+          )}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
