@@ -6,6 +6,7 @@ import {
   CreditCard,
   Smartphone,
   Code,
+  Award,
 } from "lucide-react";
 
 const Experience = () => {
@@ -55,7 +56,6 @@ const Experience = () => {
             "Focused on performance, seamless UI/UX, and AI integration for an improved user experience.",
           ],
         },
-
       ],
     },
   ];
@@ -68,6 +68,21 @@ const Experience = () => {
       period: "Oct 2018 - Jun 2022",
       description:
         "Graduated with a Bachelor of Science degree in Computer Science, gaining solid foundations in programming, algorithms, data structures, and software development.",
+    },
+  ];
+
+  const certifications = [
+    {
+      title: "Meta Flutter Developer Professional Certificate",
+      issuer: "Coursera / Meta",
+      period: "Mar 2024",
+      description: "Completed Meta's professional certificate program covering advanced Flutter development concepts, best practices, and project-based applications.",
+    },
+    {
+      title: "Responsive Web Design",
+      issuer: "freeCodeCamp",
+      period: "Jan 2023",
+      description: "Certified in responsive design techniques including Flexbox, CSS Grid, and media queries.",
     },
   ];
 
@@ -148,45 +163,84 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Education */}
-          <div>
-            <h3 className="text-2xl font-bold mb-6 flex items-center">
-              <GraduationCap className="mr-3 text-blue-500" />
-              Education
-            </h3>
+          {/* Education and Certifications */}
+          <div className="space-y-12">
+            {/* Education */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <GraduationCap className="mr-3 text-blue-500" />
+                Education
+              </h3>
 
-            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
-              {education.map((edu, index) => (
-                <div key={index} className="relative pl-12 group">
-                  <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <GraduationCap className="w-5 h-5 text-white" />
-                  </div>
-
-                  <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
-                    <h4 className="text-lg font-semibold text-blue-300">
-                      {edu.degree}
-                    </h4>
-                    <h5 className="text-base font-medium mb-2">
-                      {edu.institution}
-                    </h5>
-
-                    <div className="flex flex-wrap text-sm text-slate-400 mb-3">
-                      <div className="flex items-center mr-4 mb-1">
-                        <MapPin className="w-3 h-3 mr-1" />
-                        <span>{edu.location}</span>
-                      </div>
-                      <div className="flex items-center mb-1">
-                        <Calendar className="w-3 h-3 mr-1" />
-                        <span>{edu.period}</span>
-                      </div>
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
+                {education.map((edu, index) => (
+                  <div key={index} className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <GraduationCap className="w-5 h-5 text-white" />
                     </div>
 
-                    <p className="text-sm text-slate-300 hover:text-white transition-colors duration-200">
-                      {edu.description}
-                    </p>
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                      <h4 className="text-lg font-semibold text-blue-300">
+                        {edu.degree}
+                      </h4>
+                      <h5 className="text-base font-medium mb-2">
+                        {edu.institution}
+                      </h5>
+
+                      <div className="flex flex-wrap text-sm text-slate-400 mb-3">
+                        <div className="flex items-center mr-4 mb-1">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          <span>{edu.location}</span>
+                        </div>
+                        <div className="flex items-center mb-1">
+                          <Calendar className="w-3 h-3 mr-1" />
+                          <span>{edu.period}</span>
+                        </div>
+                      </div>
+
+                      <p className="text-sm text-slate-300 hover:text-white transition-colors duration-200">
+                        {edu.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+
+            {/* Certifications */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Award className="mr-3 text-blue-500" />
+                Certifications
+              </h3>
+
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
+                {certifications.map((cert, index) => (
+                  <div key={index} className="relative pl-12 group">
+                    <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <Award className="w-5 h-5 text-white" />
+                    </div>
+
+                    <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                      <h4 className="text-lg font-semibold text-blue-300">
+                        {cert.title}
+                      </h4>
+                      <h5 className="text-base font-medium mb-2">
+                        {cert.issuer}
+                      </h5>
+
+                      <div className="text-sm text-slate-400 mb-3 flex items-center">
+                        <Calendar className="w-3 h-3 mr-1" />
+                        <span>{cert.period}</span>
+                      </div>
+
+                      <p className="text-sm text-slate-300 hover:text-white transition-colors duration-200">
+                        {cert.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
