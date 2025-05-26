@@ -50,9 +50,12 @@ const Experience = () => {
             "Published various AI-based image processing apps including Enhancer, Remover, and Sketcher.",
             "Created ICR (Intelligent Character Recognition) apps for document scanning and text extraction.",
             "Developed step counter (pedometer) and tracking apps for fitness and location-based services.",
+            "Integrated in-app purchases and ad monetization using AdMob, AppLovin, and Meta Audience Network.",
+            "Handled full deployment cycle and compliance for both Google Play Store and Apple App Store.",
             "Focused on performance, seamless UI/UX, and AI integration for an improved user experience.",
           ],
         },
+
       ],
     },
   ];
