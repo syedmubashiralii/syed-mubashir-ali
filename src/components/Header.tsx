@@ -37,10 +37,17 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         <a href="#home" className={cn(
-          "text-2xl font-bold transition-colors",
+          "flex items-center space-x-3 text-2xl font-bold transition-colors",
           isScrolled ? "text-portfolio-navy" : "text-white"
         )}>
-          Syed <span className="text-portfolio-teal">Mubashir</span> Ali
+          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-portfolio-teal shadow-lg">
+            <img 
+              src="/lovable-uploads/487de536-0b61-45c5-8411-260cbe848850.png" 
+              alt="Syed Mubashir Ali" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <span>Syed <span className="text-portfolio-teal">Mubashir</span> Ali</span>
         </a>
         
         {/* Desktop Navigation */}
