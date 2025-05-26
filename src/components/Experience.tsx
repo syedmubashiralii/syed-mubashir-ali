@@ -9,8 +9,8 @@ const Experience = () => {
       location: "Lahore (Remote)",
       period: "Nov 2023 - Mar 2025",
       description: [
-        "Developed a Fintech application with features like bank account linking and cryptocurrency wallet management, ensuring secure transactions and seamless financial operations.",
-        "Built a Flutter web application for flight bookings and cryptocurrency payments, optimizing performance and user experience for smooth transactions and hassle-free booking."
+        "Neo One – Fintech Application\nDeveloped a full-featured fintech application using Flutter, focusing on secure and seamless financial operations. Key integrations and functionalities included:\nIBAN generation and virtual/physical card issuance using Weavr and Satchel APIs\nCryptocurrency wallet management with support for BTC and ETH via Striga APIs\nBank account linking and open banking features using Plaid\nEnsured secure transaction flows, KYC compliance, and a smooth user experience across Android, iOS, and web platforms",
+        "Neo Pass – Travel & Booking Platform\nBuilt a responsive Flutter web and mobile application for flight bookings and multi-currency payments, tailored for both traditional and crypto users:\nIntegrated crypto payments alongside bank transfers and card payments\nDelivered a pixel-perfect UI based on Figma designs\nEnsured responsive design across all screen sizes, optimizing for both mobile and desktop\nCollaborated closely with product and design teams using Jira for task management and Slack for real-time team communication"
       ]
     },
     {
