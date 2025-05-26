@@ -46,7 +46,7 @@ const Header = () => {
             <a 
               key={link.name}
               href={link.href}
-              className="text-portfolio-slate hover:text-portfolio-teal transition-colors font-medium relative group"
+              className="text-portfolio-navy hover:text-portfolio-teal transition-colors font-medium relative group"
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-portfolio-teal group-hover:w-full transition-all duration-300"></span>
@@ -77,7 +77,7 @@ const Header = () => {
               <a 
                 key={link.name}
                 href={link.href}
-                className="text-portfolio-slate hover:text-portfolio-teal transition-colors py-2 font-medium border-b border-gray-100 last:border-0"
+                className="text-portfolio-navy hover:text-portfolio-teal transition-colors py-2 font-medium border-b border-gray-100 last:border-0"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
