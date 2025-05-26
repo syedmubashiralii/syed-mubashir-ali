@@ -73,16 +73,18 @@ const Experience = () => {
 
   const certifications = [
     {
-      title: "Meta Flutter Developer Professional Certificate",
-      issuer: "Coursera / Meta",
-      period: "Mar 2024",
-      description: "Completed Meta's professional certificate program covering advanced Flutter development concepts, best practices, and project-based applications.",
+      title: "Node.js, Express, MongoDB & More: The Complete Bootcamp",
+      issuer: "Udemy",
+      period: "Apr 2025",
+      description: "Completed a comprehensive bootcamp covering backend development with Node.js, Express, MongoDB, RESTful APIs, and advanced server-side concepts.",
+      link: "https://www.udemy.com/certificate/UC-a0023ed1-5728-4812-89e8-1657c6e2c4c1/"
     },
     {
-      title: "Responsive Web Design",
-      issuer: "freeCodeCamp",
-      period: "Jan 2023",
-      description: "Certified in responsive design techniques including Flexbox, CSS Grid, and media queries.",
+      title: "Flutter Bloc Flutter BLoC - From Zero to Hero Complete Course",
+      issuer: "Udemy",
+      period: "May 2024",
+      description: "Mastered state management in Flutter using BLoC pattern with hands-on projects and best practices from scratch to advanced",
+      link: "https://www.udemy.com/certificate/UC-3cce47c1-9f06-4b31-bcfd-e70630c0a93a/"
     },
   ];
 
