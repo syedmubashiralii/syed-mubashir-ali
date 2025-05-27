@@ -20,7 +20,7 @@ const Experience = () => {
       company: "HeapStash Global",
       location: "Lahore (Remote)",
       period: "Nov 2023 - Mar 2025",
-      documentLink: "#", // Placeholder for document link
+      documentLink: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/Experience-Letter-HeapStash.pdf", // Placeholder for document link
       description: [
         {
           title: "Neo One – Fintech Application",
@@ -49,7 +49,7 @@ const Experience = () => {
       company: "Khas Tech",
       location: "Islamabad",
       period: "Jun 2022 - Nov 2023",
-      documentLink: "#", // Placeholder for document link
+      documentLink: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/Experience-Letter-Khastech.pdf",
       description: [
         {
           title: "AI-Powered Editing & Utility Apps",
