@@ -1,3 +1,4 @@
+
 import {
   Briefcase,
   Calendar,
@@ -7,7 +8,10 @@ import {
   Smartphone,
   Code,
   Award,
+  ExternalLink,
+  FileText,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Experience = () => {
   const experiences = [
@@ -16,6 +20,7 @@ const Experience = () => {
       company: "HeapStash Global",
       location: "Lahore (Remote)",
       period: "Nov 2023 - Mar 2025",
+      documentLink: "#", // Placeholder for document link
       description: [
         {
           title: "Neo One – Fintech Application",
@@ -44,6 +49,7 @@ const Experience = () => {
       company: "Khas Tech",
       location: "Islamabad",
       period: "Jun 2022 - Nov 2023",
+      documentLink: "#", // Placeholder for document link
       description: [
         {
           title: "AI-Powered Editing & Utility Apps",
@@ -89,9 +95,9 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 bg-slate-900 text-white">
+    <section id="experience" className="py-12 bg-slate-900 text-white">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Experience & Education
           </h2>
@@ -124,12 +130,25 @@ const Experience = () => {
                   </div>
 
                   <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
-                    <h4 className="text-lg font-semibold text-blue-300">
-                      {exp.title}
-                    </h4>
-                    <h5 className="text-base font-medium mb-2">
-                      {exp.company}
-                    </h5>
+                    <div className="flex justify-between items-start mb-3">
+                      <div className="flex-1">
+                        <h4 className="text-lg font-semibold text-blue-300">
+                          {exp.title}
+                        </h4>
+                        <h5 className="text-base font-medium mb-2">
+                          {exp.company}
+                        </h5>
+                      </div>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="ml-4 bg-blue-600/20 border-blue-500 text-blue-300 hover:bg-blue-600/30"
+                        onClick={() => window.open(exp.documentLink, '_blank')}
+                      >
+                        <FileText className="w-4 h-4 mr-2" />
+                        View Documents
+                      </Button>
+                    </div>
 
                     <div className="flex flex-wrap text-sm text-slate-400 mb-3">
                       <div className="flex items-center mr-4 mb-1">
@@ -166,7 +185,7 @@ const Experience = () => {
           </div>
 
           {/* Education and Certifications */}
-          <div className="space-y-12">
+          <div className="space-y-10">
             {/* Education */}
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center">
@@ -224,12 +243,25 @@ const Experience = () => {
                     </div>
 
                     <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
-                      <h4 className="text-lg font-semibold text-blue-300">
-                        {cert.title}
-                      </h4>
-                      <h5 className="text-base font-medium mb-2">
-                        {cert.issuer}
-                      </h5>
+                      <div className="flex justify-between items-start mb-3">
+                        <div className="flex-1">
+                          <h4 className="text-lg font-semibold text-blue-300">
+                            {cert.title}
+                          </h4>
+                          <h5 className="text-base font-medium mb-2">
+                            {cert.issuer}
+                          </h5>
+                        </div>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="ml-4 bg-green-600/20 border-green-500 text-green-300 hover:bg-green-600/30"
+                          onClick={() => window.open(cert.link, '_blank')}
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          View Certificate
+                        </Button>
+                      </div>
 
                       <div className="text-sm text-slate-400 mb-3 flex items-center">
                         <Calendar className="w-3 h-3 mr-1" />
