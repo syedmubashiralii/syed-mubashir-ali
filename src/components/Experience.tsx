@@ -1,4 +1,3 @@
-
 import {
   Briefcase,
   Calendar,
@@ -12,15 +11,25 @@ import {
   FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 const Experience = () => {
+  const [openDocument, setOpenDocument] = useState<string | null>(null);
+
   const experiences = [
     {
       title: "Flutter Developer",
       company: "HeapStash Global",
       location: "Lahore (Remote)",
       period: "Nov 2023 - Mar 2025",
-      documentLink: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/Experience-Letter-HeapStash.pdf", // Placeholder for document link
+      documentLink: "https://raw.githubusercontent.com/syedmubashiralii/syed-mubashir-ali/main/images/Experience-Letter-HeapStash.pdf",
       description: [
         {
           title: "Neo One – Fintech Application",
@@ -139,15 +148,30 @@ const Experience = () => {
                           {exp.company}
                         </h5>
                       </div>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="ml-4 bg-blue-600/20 border-blue-500 text-blue-300 hover:bg-blue-600/30"
-                        onClick={() => window.open(exp.documentLink, '_blank')}
-                      >
-                        <FileText className="w-4 h-4 mr-2" />
-                        View Documents
-                      </Button>
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="ml-4 bg-blue-600/20 border-blue-500 text-blue-300 hover:bg-blue-600/30"
+                          >
+                            <FileText className="w-4 h-4 mr-2" />
+                            View Documents
+                          </Button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-4xl max-h-[90vh] bg-slate-900 border-slate-700">
+                          <DialogHeader>
+                            <DialogTitle className="text-white">Experience Letter - {exp.company}</DialogTitle>
+                          </DialogHeader>
+                          <div className="h-[70vh] w-full">
+                            <iframe
+                              src={exp.documentLink}
+                              className="w-full h-full rounded-lg"
+                              title={`Experience Letter - ${exp.company}`}
+                            />
+                          </div>
+                        </DialogContent>
+                      </Dialog>
                     </div>
 
                     <div className="flex flex-wrap text-sm text-slate-400 mb-3">
