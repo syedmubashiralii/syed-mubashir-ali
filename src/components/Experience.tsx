@@ -104,7 +104,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-12 bg-slate-900 text-white">
+    <section id="experience" className="py-12 bg-slate-900 text-white neumorphic-section">
       <div className="container">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
@@ -138,7 +138,7 @@ const Experience = () => {
                     )}
                   </div>
 
-                  <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                  <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
                     <div className="flex justify-between items-start mb-3">
                       <div className="flex-1">
                         <h4 className="text-lg font-semibold text-blue-300">
@@ -224,7 +224,7 @@ const Experience = () => {
                       <GraduationCap className="w-5 h-5 text-white" />
                     </div>
 
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                    <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
                       <h4 className="text-lg font-semibold text-blue-300">
                         {edu.degree}
                       </h4>
@@ -266,7 +266,7 @@ const Experience = () => {
                       <Award className="w-5 h-5 text-white" />
                     </div>
 
-                    <div className="bg-slate-800/50 backdrop-blur-sm p-5 rounded-xl hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                    <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex-1">
                           <h4 className="text-lg font-semibold text-blue-300">
@@ -276,15 +276,30 @@ const Experience = () => {
                             {cert.issuer}
                           </h5>
                         </div>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="ml-4 bg-green-600/20 border-green-500 text-green-300 hover:bg-green-600/30"
-                          onClick={() => window.open(cert.link, '_blank')}
-                        >
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          View Certificate
-                        </Button>
+                        <Dialog>
+                          <DialogTrigger asChild>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="ml-4 bg-green-600/20 border-green-500 text-green-300 hover:bg-green-600/30"
+                            >
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              View Certificate
+                            </Button>
+                          </DialogTrigger>
+                          <DialogContent className="max-w-4xl max-h-[90vh] bg-slate-900 border-slate-700">
+                            <DialogHeader>
+                              <DialogTitle className="text-white">Certificate - {cert.title}</DialogTitle>
+                            </DialogHeader>
+                            <div className="h-[70vh] w-full">
+                              <iframe
+                                src={cert.link}
+                                className="w-full h-full rounded-lg"
+                                title={`Certificate - ${cert.title}`}
+                              />
+                            </div>
+                          </DialogContent>
+                        </Dialog>
                       </div>
 
                       <div className="text-sm text-slate-400 mb-3 flex items-center">

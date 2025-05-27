@@ -1,7 +1,7 @@
 
 import { 
   Database, 
-  Code,
+  Code2,
   Smartphone,
   Globe,
   Sparkles
@@ -11,7 +11,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      icon: <Code className="w-6 h-6 text-blue-600" />,
+      icon: <Code2 className="w-6 h-6 text-blue-600" />,
       skills: ["Dart", "JavaScript", "Java", "C++", "PHP", "C#"],
       gradient: "from-blue-500 to-purple-600"
     },
@@ -36,7 +36,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-12 bg-white relative overflow-hidden">
+    <section id="skills" className="py-12 bg-white relative overflow-hidden neumorphic-section">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-blue-50/30 to-purple-50/30"></div>
       <div className="container relative z-10">
         <div className="text-center mb-8">
@@ -56,11 +56,11 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 group border border-slate-100 relative overflow-hidden"
+              className="neumorphic-card p-5 group relative overflow-hidden"
             >
               <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${category.gradient}`}></div>
               <div className="flex items-center mb-3 group-hover:scale-110 transition-transform duration-300">
-                <div className={`p-2 rounded-lg bg-gradient-to-r ${category.gradient} bg-opacity-10`}>
+                <div className={`p-3 rounded-lg bg-gradient-to-r ${category.gradient} shadow-lg`}>
                   {category.icon}
                 </div>
                 <h3 className="text-base font-semibold text-slate-800 ml-3">{category.title}</h3>
