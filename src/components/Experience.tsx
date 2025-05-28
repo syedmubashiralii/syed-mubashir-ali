@@ -1,3 +1,4 @@
+
 import {
   Briefcase,
   Calendar,
@@ -104,14 +105,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-12 bg-slate-900 text-white neumorphic-section">
+    <section id="experience" className="py-12 bg-white neumorphic-section">
       <div className="container">
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-slate-800">
             Experience & Education
           </h2>
           <div className="w-16 h-1 bg-blue-500 mx-auto mb-4"></div>
-          <p className="text-slate-300 max-w-2xl mx-auto">
+          <p className="text-slate-600 max-w-2xl mx-auto">
             My professional journey and academic background that have shaped my
             expertise and knowledge.
           </p>
@@ -120,12 +121,12 @@ const Experience = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Work Experience */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 flex items-center">
+            <h3 className="text-2xl font-bold mb-6 flex items-center text-slate-800">
               <Briefcase className="mr-3 text-blue-500" />
               Work Experience
             </h3>
 
-            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
+            <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-300">
               {experiences.map((exp, index) => (
                 <div key={index} className="relative pl-12 group">
                   <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
@@ -138,13 +139,13 @@ const Experience = () => {
                     )}
                   </div>
 
-                  <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                  <div className="neumorphic-card bg-white p-5 hover:bg-slate-50 transition-all duration-300 hover:scale-[1.02] border border-slate-200">
                     <div className="flex justify-between items-start mb-3">
                       <div className="flex-1">
-                        <h4 className="text-lg font-semibold text-blue-300">
+                        <h4 className="text-lg font-semibold text-blue-600">
                           {exp.title}
                         </h4>
-                        <h5 className="text-base font-medium mb-2">
+                        <h5 className="text-base font-medium mb-2 text-slate-800">
                           {exp.company}
                         </h5>
                       </div>
@@ -153,15 +154,15 @@ const Experience = () => {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="ml-4 bg-blue-600/20 border-blue-500 text-blue-300 hover:bg-blue-600/30"
+                            className="ml-4 bg-blue-50 border-blue-300 text-blue-600 hover:bg-blue-100"
                           >
                             <FileText className="w-4 h-4 mr-2" />
                             View Documents
                           </Button>
                         </DialogTrigger>
-                        <DialogContent className="max-w-4xl max-h-[90vh] bg-slate-900 border-slate-700">
+                        <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
                           <DialogHeader>
-                            <DialogTitle className="text-white">Experience Letter - {exp.company}</DialogTitle>
+                            <DialogTitle className="text-slate-800">Experience Letter - {exp.company}</DialogTitle>
                           </DialogHeader>
                           <div className="h-[70vh] w-full">
                             <iframe
@@ -174,7 +175,7 @@ const Experience = () => {
                       </Dialog>
                     </div>
 
-                    <div className="flex flex-wrap text-sm text-slate-400 mb-3">
+                    <div className="flex flex-wrap text-sm text-slate-500 mb-3">
                       <div className="flex items-center mr-4 mb-1">
                         <MapPin className="w-3 h-3 mr-1" />
                         <span>{exp.location}</span>
@@ -185,15 +186,15 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    <div className="space-y-3 text-sm text-slate-300">
+                    <div className="space-y-3 text-sm text-slate-600">
                       {exp.description.map((section, i) => (
                         <div key={i}>
-                          <strong className="text-white">{section.title}</strong>
+                          <strong className="text-slate-800">{section.title}</strong>
                           <ul className="list-disc list-inside mt-1 ml-4">
                             {section.details.map((point, j) => (
                               <li
                                 key={j}
-                                className="hover:text-white transition-colors duration-200"
+                                className="hover:text-slate-800 transition-colors duration-200"
                               >
                                 {point}
                               </li>
@@ -212,27 +213,27 @@ const Experience = () => {
           <div className="space-y-10">
             {/* Education */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
+              <h3 className="text-2xl font-bold mb-6 flex items-center text-slate-800">
                 <GraduationCap className="mr-3 text-blue-500" />
                 Education
               </h3>
 
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-300">
                 {education.map((edu, index) => (
                   <div key={index} className="relative pl-12 group">
                     <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       <GraduationCap className="w-5 h-5 text-white" />
                     </div>
 
-                    <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
-                      <h4 className="text-lg font-semibold text-blue-300">
+                    <div className="neumorphic-card bg-white p-5 hover:bg-slate-50 transition-all duration-300 hover:scale-[1.02] border border-slate-200">
+                      <h4 className="text-lg font-semibold text-blue-600">
                         {edu.degree}
                       </h4>
-                      <h5 className="text-base font-medium mb-2">
+                      <h5 className="text-base font-medium mb-2 text-slate-800">
                         {edu.institution}
                       </h5>
 
-                      <div className="flex flex-wrap text-sm text-slate-400 mb-3">
+                      <div className="flex flex-wrap text-sm text-slate-500 mb-3">
                         <div className="flex items-center mr-4 mb-1">
                           <MapPin className="w-3 h-3 mr-1" />
                           <span>{edu.location}</span>
@@ -243,7 +244,7 @@ const Experience = () => {
                         </div>
                       </div>
 
-                      <p className="text-sm text-slate-300 hover:text-white transition-colors duration-200">
+                      <p className="text-sm text-slate-600 hover:text-slate-800 transition-colors duration-200">
                         {edu.description}
                       </p>
                     </div>
@@ -254,25 +255,25 @@ const Experience = () => {
 
             {/* Certifications */}
             <div>
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
+              <h3 className="text-2xl font-bold mb-6 flex items-center text-slate-800">
                 <Award className="mr-3 text-blue-500" />
                 Certifications
               </h3>
 
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-700">
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-1/2 before:h-full before:w-0.5 before:bg-slate-300">
                 {certifications.map((cert, index) => (
                   <div key={index} className="relative pl-12 group">
                     <div className="absolute left-0 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                       <Award className="w-5 h-5 text-white" />
                     </div>
 
-                    <div className="neumorphic-card bg-slate-800/50 backdrop-blur-sm p-5 hover:bg-slate-800/80 transition-all duration-300 hover:scale-[1.02] border border-slate-700/50">
+                    <div className="neumorphic-card bg-white p-5 hover:bg-slate-50 transition-all duration-300 hover:scale-[1.02] border border-slate-200">
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex-1">
-                          <h4 className="text-lg font-semibold text-blue-300">
+                          <h4 className="text-lg font-semibold text-blue-600">
                             {cert.title}
                           </h4>
-                          <h5 className="text-base font-medium mb-2">
+                          <h5 className="text-base font-medium mb-2 text-slate-800">
                             {cert.issuer}
                           </h5>
                         </div>
@@ -281,15 +282,15 @@ const Experience = () => {
                             <Button
                               variant="outline"
                               size="sm"
-                              className="ml-4 bg-green-600/20 border-green-500 text-green-300 hover:bg-green-600/30"
+                              className="ml-4 bg-green-50 border-green-300 text-green-600 hover:bg-green-100"
                             >
                               <ExternalLink className="w-4 h-4 mr-2" />
                               View Certificate
                             </Button>
                           </DialogTrigger>
-                          <DialogContent className="max-w-4xl max-h-[90vh] bg-slate-900 border-slate-700">
+                          <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
                             <DialogHeader>
-                              <DialogTitle className="text-white">Certificate - {cert.title}</DialogTitle>
+                              <DialogTitle className="text-slate-800">Certificate - {cert.title}</DialogTitle>
                             </DialogHeader>
                             <div className="h-[70vh] w-full">
                               <iframe
@@ -302,12 +303,12 @@ const Experience = () => {
                         </Dialog>
                       </div>
 
-                      <div className="text-sm text-slate-400 mb-3 flex items-center">
+                      <div className="text-sm text-slate-500 mb-3 flex items-center">
                         <Calendar className="w-3 h-3 mr-1" />
                         <span>{cert.period}</span>
                       </div>
 
-                      <p className="text-sm text-slate-300 hover:text-white transition-colors duration-200">
+                      <p className="text-sm text-slate-600 hover:text-slate-800 transition-colors duration-200">
                         {cert.description}
                       </p>
                     </div>
