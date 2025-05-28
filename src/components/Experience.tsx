@@ -1,4 +1,3 @@
-
 import {
   Briefcase,
   Calendar,
@@ -104,6 +103,16 @@ const Experience = () => {
     },
   ];
 
+  const handleDocumentView = (documentLink: string) => {
+    // Try to open in dialog first, fallback to download
+    try {
+      setOpenDocument(documentLink);
+    } catch (error) {
+      // If dialog fails, just download the file
+      window.open(documentLink, '_blank');
+    }
+  };
+
   return (
     <section id="experience" className="py-12 bg-white neumorphic-section">
       <div className="container">
@@ -149,30 +158,15 @@ const Experience = () => {
                           {exp.company}
                         </h5>
                       </div>
-                      <Dialog>
-                        <DialogTrigger asChild>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            className="ml-4 bg-blue-50 border-blue-300 text-blue-600 hover:bg-blue-100"
-                          >
-                            <FileText className="w-4 h-4 mr-2" />
-                            View Documents
-                          </Button>
-                        </DialogTrigger>
-                        <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
-                          <DialogHeader>
-                            <DialogTitle className="text-slate-800">Experience Letter - {exp.company}</DialogTitle>
-                          </DialogHeader>
-                          <div className="h-[70vh] w-full">
-                            <iframe
-                              src={exp.documentLink}
-                              className="w-full h-full rounded-lg"
-                              title={`Experience Letter - ${exp.company}`}
-                            />
-                          </div>
-                        </DialogContent>
-                      </Dialog>
+                      <Button
+                        onClick={() => handleDocumentView(exp.documentLink)}
+                        variant="outline"
+                        size="sm"
+                        className="ml-4 bg-blue-50 border-blue-300 text-blue-600 hover:bg-blue-100"
+                      >
+                        <FileText className="w-4 h-4 mr-2" />
+                        View Documents
+                      </Button>
                     </div>
 
                     <div className="flex flex-wrap text-sm text-slate-500 mb-3">
@@ -277,30 +271,15 @@ const Experience = () => {
                             {cert.issuer}
                           </h5>
                         </div>
-                        <Dialog>
-                          <DialogTrigger asChild>
-                            <Button
-                              variant="outline"
-                              size="sm"
-                              className="ml-4 bg-green-50 border-green-300 text-green-600 hover:bg-green-100"
-                            >
-                              <ExternalLink className="w-4 h-4 mr-2" />
-                              View Certificate
-                            </Button>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
-                            <DialogHeader>
-                              <DialogTitle className="text-slate-800">Certificate - {cert.title}</DialogTitle>
-                            </DialogHeader>
-                            <div className="h-[70vh] w-full">
-                              <iframe
-                                src={cert.link}
-                                className="w-full h-full rounded-lg"
-                                title={`Certificate - ${cert.title}`}
-                              />
-                            </div>
-                          </DialogContent>
-                        </Dialog>
+                        <Button
+                          onClick={() => window.open(cert.link, '_blank')}
+                          variant="outline"
+                          size="sm"
+                          className="ml-4 bg-green-50 border-green-300 text-green-600 hover:bg-green-100"
+                        >
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          View Certificate
+                        </Button>
                       </div>
 
                       <div className="text-sm text-slate-500 mb-3 flex items-center">
@@ -319,6 +298,29 @@ const Experience = () => {
           </div>
         </div>
       </div>
+
+      {/* Document Viewer Dialog */}
+      <Dialog open={!!openDocument} onOpenChange={() => setOpenDocument(null)}>
+        <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
+          <DialogHeader>
+            <DialogTitle className="text-slate-800">Experience Document</DialogTitle>
+          </DialogHeader>
+          <div className="h-[70vh] w-full">
+            {openDocument && (
+              <iframe
+                src={openDocument}
+                className="w-full h-full rounded-lg"
+                title="Experience Document"
+                onError={() => {
+                  // If iframe fails to load, fallback to opening in new tab
+                  setOpenDocument(null);
+                  window.open(openDocument, '_blank');
+                }}
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
