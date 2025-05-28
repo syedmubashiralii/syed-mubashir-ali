@@ -11,18 +11,8 @@ import {
   FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { useState } from "react";
 
 const Experience = () => {
-  const [openDocument, setOpenDocument] = useState<string | null>(null);
-
   const experiences = [
     {
       title: "Flutter Developer",
@@ -104,13 +94,7 @@ const Experience = () => {
   ];
 
   const handleDocumentView = (documentLink: string) => {
-    // Try to open in dialog first, fallback to download
-    try {
-      setOpenDocument(documentLink);
-    } catch (error) {
-      // If dialog fails, just download the file
-      window.open(documentLink, '_blank');
-    }
+    window.open(documentLink, '_blank');
   };
 
   return (
@@ -298,29 +282,6 @@ const Experience = () => {
           </div>
         </div>
       </div>
-
-      {/* Document Viewer Dialog */}
-      <Dialog open={!!openDocument} onOpenChange={() => setOpenDocument(null)}>
-        <DialogContent className="max-w-4xl max-h-[90vh] bg-white border-slate-300">
-          <DialogHeader>
-            <DialogTitle className="text-slate-800">Experience Document</DialogTitle>
-          </DialogHeader>
-          <div className="h-[70vh] w-full">
-            {openDocument && (
-              <iframe
-                src={openDocument}
-                className="w-full h-full rounded-lg"
-                title="Experience Document"
-                onError={() => {
-                  // If iframe fails to load, fallback to opening in new tab
-                  setOpenDocument(null);
-                  window.open(openDocument, '_blank');
-                }}
-              />
-            )}
-          </div>
-        </DialogContent>
-      </Dialog>
     </section>
   );
 };
