@@ -11,25 +11,25 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      icon: <Code2 className="w-6 h-6 text-blue-600" />,
+      icon: <Code2 className="w-6 h-6 text-white" />,
       skills: ["Dart", "JavaScript", "Java", "C++", "PHP", "C#"],
       gradient: "from-blue-500 to-purple-600"
     },
     {
       title: "Database",
-      icon: <Database className="w-6 h-6 text-green-600" />,
+      icon: <Database className="w-6 h-6 text-white" />,
       skills: ["MySQL", "Firebase", "SQLite", "Supabase", "MongoDB"],
       gradient: "from-green-500 to-teal-600"
     },
     {
       title: "Mobile Development",
-      icon: <Smartphone className="w-6 h-6 text-orange-600" />,
+      icon: <Smartphone className="w-6 h-6 text-white" />,
       skills: ["Flutter", "React Native", "Android", "iOS"],
       gradient: "from-orange-500 to-red-600"
     },
     {
       title: "Application Types",
-      icon: <Globe className="w-6 h-6 text-portfolio-teal" />,
+      icon: <Globe className="w-6 h-6 text-white" />,
       skills: ["Mobile Apps", "Desktop Apps", "Web Apps"],
       gradient: "from-portfolio-teal to-blue-600"
     }
