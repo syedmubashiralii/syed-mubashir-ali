@@ -30,7 +30,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
         <Hero />
@@ -45,14 +45,13 @@ const Index = () => {
       <footer className="bg-portfolio-navy text-white py-8">
         <div className="container text-center">
           <p>© {new Date().getFullYear()} Syed Mubashir Ali. All Rights Reserved.</p>
-        
         </div>
       </footer>
       
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-portfolio-teal text-white p-3 rounded-full shadow-lg hover:bg-portfolio-teal/90 transition-colors z-40"
+          className="fixed bottom-6 right-6 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:bg-primary/90 transition-colors z-40"
           aria-label="Scroll to top"
         >
           <ArrowUp size={20} />

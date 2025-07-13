@@ -64,15 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				portfolio: {
-					navy: '#2C3E50',
-					teal: '#3498DB',
-					lightBlue: '#AED6F1',
-					gray: '#95A5A6',
-					lightGray: '#F5F7FA',
-					gold: '#D4AF37',
-					cream: '#FFF8E1',
-					darkBlue: '#1A2530',
-					slate: '#34495E'
+					navy: 'hsl(var(--portfolio-navy))',
+					teal: 'hsl(var(--portfolio-teal))',
+					slate: 'hsl(var(--portfolio-slate))',
+					gray: 'hsl(var(--portfolio-gray))',
+					light: 'hsl(var(--portfolio-light))'
 				}
 			},
 			borderRadius: {

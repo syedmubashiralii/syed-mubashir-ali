@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 33% 10%;
 
-    --primary: 210 80% 42%;
+    --primary: 207 89% 54%;
     --primary-foreground: 210 33% 99%;
 
     --secondary: 210 15% 95%;
@@ -23,7 +23,7 @@
     --muted: 210 15% 95%;
     --muted-foreground: 210 10% 40%;
 
-    --accent: 45 80% 52%;
+    --accent: 207 89% 54%;
     --accent-foreground: 210 33% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,9 +31,16 @@
 
     --border: 210 15% 90%;
     --input: 210 15% 90%;
-    --ring: 210 80% 42%;
+    --ring: 207 89% 54%;
 
     --radius: 0.5rem;
+
+    /* Portfolio specific tokens */
+    --portfolio-navy: 210 22% 22%;
+    --portfolio-teal: 207 89% 54%;
+    --portfolio-slate: 215 20% 30%;
+    --portfolio-gray: 210 14% 65%;
+    --portfolio-light: 210 33% 97%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -98,20 +105,20 @@
 
 @layer components {
   .elegant-card {
-    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100;
+    @apply bg-card rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border border-border;
   }
 
   .elegant-heading {
-    @apply font-semibold text-portfolio-navy relative;
+    @apply font-semibold text-foreground relative;
   }
   
   .elegant-heading::after {
     content: '';
-    @apply absolute bottom-0 left-0 w-10 h-0.5 bg-portfolio-teal mt-1;
+    @apply absolute bottom-0 left-0 w-10 h-0.5 bg-primary mt-1;
   }
 
   .elegant-button {
-    @apply bg-portfolio-teal text-white px-6 py-2.5 rounded hover:bg-portfolio-teal/90 transition-all duration-300 shadow-md hover:shadow-lg;
+    @apply bg-primary text-primary-foreground px-6 py-2.5 rounded hover:bg-primary/90 transition-all duration-300 shadow-md hover:shadow-lg;
   }
 
   /* Neumorphic Effects for Portfolio */
