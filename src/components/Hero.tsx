@@ -30,10 +30,10 @@ const Hero = () => {
               </h1>
             </div>
             <h2 className="text-xl md:text-2xl text-slate-300 font-medium bg-gradient-to-r from-slate-300 to-blue-200 bg-clip-text text-transparent">
-              iOS Developer
+              Flutter Developer
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed text-lg">
-              Specializing in Swift, SwiftUI, and cross-platform Flutter development. Delivering high-performance mobile applications with clean, scalable architecture across fintech, healthcare, and IoT domains.
+              Passionate Flutter developer crafting exceptional mobile experiences across platforms. Expert in building scalable fintech solutions, AI-powered tools, and e-commerce applications with 20+ successful app deployments on Google Play and App Store.
             </p>
             
             {/* Key Details */}
