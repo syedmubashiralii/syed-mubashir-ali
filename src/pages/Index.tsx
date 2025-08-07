@@ -30,7 +30,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-slate-950">
       <Header />
       <main>
         <Hero />
@@ -42,7 +42,7 @@ const Index = () => {
         <Contact />
       </main>
       
-      <footer className="bg-portfolio-navy text-white py-8">
+      <footer className="bg-slate-950 border-t border-slate-800 text-slate-300 py-8">
         <div className="container text-center">
           <p>© {new Date().getFullYear()} Syed Mubashir Ali. All Rights Reserved.</p>
         </div>

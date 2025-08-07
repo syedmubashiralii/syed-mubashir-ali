@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Sparkles } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 pb-8 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
       {/* Enhanced background decoration */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
       <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
@@ -25,20 +25,15 @@ const Hero = () => {
           {/* Main Content */}
           <div className="text-white space-y-6 max-w-4xl">
             <div className="animate-fade-in">
-              <div className="flex items-center justify-center mb-2">
-                <Sparkles className="w-5 h-5 text-blue-300 mr-2 animate-pulse" />
-                <span className="text-lg text-blue-300 font-medium">Hello, I'm</span>
-                <Sparkles className="w-5 h-5 text-blue-300 ml-2 animate-pulse" />
-              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white via-blue-200 to-portfolio-teal bg-clip-text text-transparent">
                 Syed Mubashir Ali
               </h1>
             </div>
             <h2 className="text-xl md:text-2xl text-slate-300 font-medium bg-gradient-to-r from-slate-300 to-blue-200 bg-clip-text text-transparent">
-              Flutter Developer
+              iOS Developer
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto leading-relaxed text-lg">
-              Passionate Flutter developer with expertise in building high-performance mobile and web applications. I've deployed over 20 apps across Google Play and the App Store, specializing in fintech solutions, AI-powered tools, and e-commerce applications.
+              Specializing in Swift, SwiftUI, and cross-platform Flutter development. Delivering high-performance mobile applications with clean, scalable architecture across fintech, healthcare, and IoT domains.
             </p>
             
             {/* Key Details */}

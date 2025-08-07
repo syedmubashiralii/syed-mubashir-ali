@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="about" className="py-8 bg-gradient-to-br from-slate-50 to-blue-50/30">
+    <section id="about" className="py-8 bg-gradient-to-br from-slate-900 to-slate-950">
       <div className="container">
         <div className="text-center">
-          <p className="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-            With experience in integrating payment systems, building custom animations, and enhancing user engagement with notifications and machine learning, I'm always exploring new technologies to stay ahead in the rapidly evolving development landscape.
+          <p className="text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto">
+            Results-driven iOS Developer with proven success in delivering scalable mobile solutions across fintech, IoT, healthcare, and navigation domains. Expert in Swift and SwiftUI, with cross-platform experience in Flutter. Recognized for resolving production issues, optimizing performance, and collaborating effectively with cross-functional teams.
           </p>
         </div>
       </div>
