@@ -42,11 +42,6 @@ const Index = () => {
         <Contact />
       </main>
       
-      <footer className="bg-slate-950 border-t border-slate-800 text-slate-300 py-8">
-        <div className="container text-center">
-          <p>© {new Date().getFullYear()} Syed Mubashir Ali. All Rights Reserved.</p>
-        </div>
-      </footer>
       
       {showScrollTop && (
         <button
